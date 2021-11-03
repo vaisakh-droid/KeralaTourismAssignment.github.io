@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kerala-Tourism</title>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    
+ 
+
+</head>
+
+<body id = "main">
+
+    <div class="container">
+
+        <div class="navbar">
+            
+            <h2>Kerala</h2>
+            <nav>
+                <ul id = "menuList">
+                   
+                    <li><a href=""><ion-icon name="home-outline" class = "icon"></ion-icon>Home</a></li>
+                    <li onclick = "document.querySelector('.activities-title').scrollIntoView()"><a><ion-icon name="bicycle-outline" class = "icon"></ion-icon>Activites</a></li>
+                    <li onclick = "document.querySelector('.places').scrollIntoView()"><a><ion-icon name="map-outline" class = "icon"></ion-icon>Places</a></li>
+                    
+
+                    <li><a class = "login"><i class="fas fa-sign-in-alt" style = "color:rgb(83, 192, 255);"></i>Login</a></li>
+                    <li><a class = "signup"><i class="fas fa-user-plus" style = "color:rgb(83, 192, 255);margin-right: 15px;"></i>Signup</a></li>
+
+                </ul>
+            </nav>
+
+            
+
+            <i class="fas fa-times" onclick = "togglemenu()" style = "padding-right:12.6%;"></i>
+            <i class="fas fa-bars" onclick = "togglemenu()"></i>
+
+        </div>
+
+    
+        
+        <div class="top">
+
+            <div class="main-text">
+                
+                <p class="text" id="greeting">
+                    Come here, and experience a vibrant and traditional Kathakali dance performance.
+                </p>
+
+              
+                <p class="sub">
+                  Get started by clicking the button below.
+                </p>
+
+                <button onclick="scroll_to_search()">Get started</button>
+              
+            </div>
+            
+
+                <video poster="color.png" autoplay="autoplay" loop="true" autobuffer muted playsinline >
+                  <source src="Images/production ID_4120588.mp4" type="video/mp4"/>
+                </video>
+                
+               
+              
+        </div>
+
+  
+       <div class="bg-modal-login" >
+
+            <div class="main-login">
+
+                <div class="left-login">
+
+                    <h3>Hey there, welcome back</h3>
+                    <img src="Images/kerala.jpg" alt="">
+                    <a href="">Don't have an account?</a>
+
+                </div>
+                
+
+                <div class="right-login">
+
+                    <div class="close-login">
+                        <i class="fas fa-times-circle"></i>
+                    </div>
+                    
+                    <form action="">
+                        <h3>Welcome Back!</h3>
+                        <input type="email" placeholder="Email" required>
+                        <input type="password" placeholder="Password" required>
+
+                        <input type="submit" value = "Login">
+                    </form>
+
+                </div>
+
+            </div>
+
+       </div>
+
+ 
+       <div class="bg-modal-signup">
+
+            <div class="main-signup">
+
+                <div class="left-signup">
+
+                    <h3>Hey there, welcome back</h3>
+                    <img src="Images/kerala.jpg" alt="">
+                    <a href="">Already have an account?</a>
+
+                </div>
+                
+
+                <div class="right-signup">
+
+                    <div class="close-signup">
+                        <i class="fas fa-times-circle"></i>
+                    </div>
+                    
+                    <form action="">
+
+                        <h3>Join US!</h3>
+                        <input type="email" placeholder="Enter email" required>
+                        <input type="text" placeholder="Enter username" required>
+                        <input type="password" placeholder="Enter password" required>
+
+                        <input type="submit" value = "Signup">
+                    </form>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <div class="middle">
+            
+            <h1 class = "sitename">Kerala</h1>
+            <center><h6>Kerala, a state on India's tropical Malabar Coast, has nearly 600km of Arabian Sea shoreline. It's known for its palm-lined beaches and backwaters, a network of canals. </h6>
+            </center>
+            <div class="back-text">
+            <center><h5>KERALA</h5></center>
+            </div>
+            
+            
+            
+            
+            <div class="images">
+                
+                
+                <img src="Images/kathakali1.jpeg" alt="">
+                <img src="Images/greenery.jpeg" alt="">
+                <img src="Images/nature1.jpeg" alt="">
+            </div>
+            <div class="about">
+                
+              
+            </div>
+
+            <div class="ruler" style="margin-bottom: 20px;"></div>
+              <h1 class = "sitename activities-title">Activities</h1>
+            <center><h6>Attend a traditional Kathakali dance performance, cruise the backwaters on a houseboat, or take an afternoon to go for paragliding.</h6>
+            </center>
+            
+            <div class="activities">
+                <div class="activity">
+                    <img src="Images/fortKochi.jpg" alt="">
+                    <div>
+                        <h3>Fort Kochi</h3>
+                        <p>Explore historic fort kochi.</p>
+                    </div>
+                </div>
+                <div class="activity">
+                    <img src="Images/kathakali.jpg" alt="">
+                    <div>
+                        <h3>Kathakali</h3>
+                        <p>Catch a kathakali performance.</p>
+                    </div>
+                </div>
+                <div class="activity">
+                    <img src="Images/nature.jpg" alt="">
+                    <div>
+                        <h3>Explore</h3>
+                        <p>Spot wildlife and enjoy nature.</p>
+                    </div>
+                </div>
+                
+            </div>
+
+            <div class="ruler"></div>
+            <h1 class = "sitename">Places To Visit</h1>
+            <center><h6 style="margin-bottom: 30px;">Kerala, a state on India's tropical Malabar Coast, has nearly 600km of Arabian Sea shoreline. It's known for its palm-lined beaches and backwaters, a network of canals. </h6>
+            </center>
+
+           <div class="places">
+               <div class="place" onclick="window.location.href = 'wayanad.html'">
+                   <img src="https://irisholidays.com/backend/web/destination-details/1567442332524.jpg" alt="">
+                   
+                        <div>
+
+                            <h3>Wayanad</h3>
+                            <p>Wayanad is a rural district in Kerala state, southwest India. </p>
+                             <button>Show Details</button>
+                        </div>
+               </div>
+               <div class="place" onclick="window.location.href = 'thrissur.html'">
+                <img src="Images/thrissur.jfif" alt="">
+                
+                    <div>
+                    <h3>Thrissur</h3>
+                    <p>Thrissur is a city in the south Indian state of Kerala...</p>
+                     <button>Show Details</button>
+                    </div>
+            </div>
+            <div class="place" onclick="window.location.href = 'trivandrum.html'">
+                <img src="Images/trivandrum.jpg" alt="">
+                
+                    <div>
+                    <h3>Trivandrum</h3>
+                    <p>Thiruvananthapuram is the capital of Kerala...</p>
+                     <button>Show Details</button>
+                    </div>
+            </div>
+            <div class="place" onclick="window.location.href = 'palakkad.html'">
+                <img src="Images/palakkad.jpg" alt="">
+                
+                    <div>
+                    <h3>Palakkad</h3>
+                    <p>Palakkad, or Palghat, is a city in Kerala,..</p>
+                     <button>Show Details</button>
+                    </div>
+            </div>
+            <div class="place" onclick="window.location.href = 'kollam.html'">
+                <img src="Images/kollam.jpg" alt="">
+                
+                    <div>
+                    <h3>Kollam</h3>
+                    <p>Kollam is a city in the state of Kerala, on India's Malabar Coast.</p>
+                     <button>Show Details</button>
+                    </div>
+            </div>
+            <div class="place" onclick="window.location.href = 'kozhikode.html'">
+                <img src="Images/kozhikode.jpg" alt="">
+                
+                    <div>
+                    <h3>Kozhikode</h3>
+                    <p>Kozhikode is a coastal city in the south Indian state of Kerala.</p>
+                     <button>Show Details</button>
+                    </div>
+            </div>
+            <div class="place" onclick="window.location.href = 'malapuram.html'">
+                <img src="Images/malapuram.jpg" alt="">
+                
+                    <div>
+                    <h3>Malapuram</h3>
+                    <p>Malappuram is a city in the Indian state of Kerala..</p>
+                     <button>Show Details</button>
+                    </div>
+            </div>
+            <div class="place" onclick="window.location.href = 'idukki.html'">
+                <img src="https://images.pexels.com/photos/1049771/pexels-photo-1049771.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" alt="">
+                
+                    <div>
+                    <h3>Idukki</h3>
+                    <p>Idukki district is a densely forested, mountainous region in the Kerala. </p>
+                     <button>Show Details</button>
+                    </div>
+            </div>
+            <div class="place" onclick="window.location.href = 'ernakulam.html'">
+                <img src="Images/ernakulam.jpg" alt="">
+                
+                    <div>
+                    <h3>Ernakulam</h3>
+                    <p>Sprawling, residential Ernakulam is known for Marine Drive...</p>
+                     <button>Show Details</button>
+                    </div>
+            </div>
+            <div class="place" onclick="window.location.href = 'alappuzha.html'">
+                <img src="Images/alappuzha.jpg" alt="">
+                
+                    <div>
+                    <h3>Alappuzha</h3>
+                    <p>Alappuzha is a city on the Laccadive Sea in state of Kerala.</p>
+                    <button>Show Details</button>
+                    </div>
+            </div>
+            <div class="place" onclick="window.location.href = 'kannur.html'">
+                <img src="Images/kannur.jpg" alt="">
+                
+                    <div>
+                    <h3>Kannur</h3>
+                    <p>Kannur is a coastal city in the south Indian state of Kerala. </p>
+                     <button>Show Details</button>
+                    </div>
+            </div>
+            <div class="place" onclick="window.location.href = 'kasargod.html'">
+                <img src="Images/kasaragod.jpg" alt="">
+
+                    <div>
+                    <h3>Kasargod</h3>
+                    <p>Kasaragod formerly known in English as Kassergode,...</p>
+                     <button>Show Details</button>
+                    </div>
+            </div>
+            <div class="place" onclick="window.location.href = 'kottyam.html'">
+                <img src="Images/kottyam.jpg" alt="">
+                
+                    <div>
+                    <h3>Kottayam</h3>
+                    <p>Kottayam, IPA: is a city in the Indian state of Kerala. </p>
+                     <button>Show Details</button>
+                    </div>
+            </div>
+            <div class="place" onclick="window.location.href = 'pathanamthitta.html'">
+                <img src="Images/pathanamthitta.jpg" alt="">
+                
+                    <div>
+                    <h3>Pathanamthitta</h3>
+                    <p>Pathanamthitta is a municipality situated in the Central Travancore..</p>
+                     <button>Show Details</button>
+                    </div>
+            </div>
+               
+           
+               
+           </div>
+
+            <!-- <div class="ruler" style="opacity:0.9"></div> -->
+          
+           
+        </div>
+
+        <div class="footer">
+            <h4>About</h4>
+            <h4>Login</h4>
+            <h3>Kerala</h3>
+            <h4>Home</h4>
+            <h4>Contact</h4>
+        </div>
+      
+      
+
+    </div>
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+
+      AOS.init({
+          offset:10,
+          duration:000
+      });
+
+    </script>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="http://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="homepage.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+</html>
